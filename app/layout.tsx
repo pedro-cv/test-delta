@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-// import Link from "next/link";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,10 +34,10 @@ export default function RootLayout({
           <nav className="p-4">
             <ul className="flex gap-4">
               <li className="py-2 px-4 bg-primary text-primary-foreground rounded-lg">
-                {/* <Link href="/pets/create">Crear Mascotas</Link> */}
+                <Link href="/pets/create">Crear Mascotas</Link>
               </li>
               <li className="py-2 px-4 bg-primary text-primary-foreground rounded-lg">
-                {/* <Link href="/pets/list">Listado de Mascotas</Link> */}
+                <Link href="/pets/list">Listado de Mascotas</Link>
               </li>
             </ul>
           </nav>
